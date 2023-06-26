@@ -1,0 +1,9 @@
+
+Hola, encantado de saludarte!
+
+Aquí tienes un breve resumen de la práctica Classificación KNN VINOS
+
+En primer lugar he buscado si habia algún registro negativo o nulo y despues he adaptado el DataFrame para que todas las clases tuvieran la misma cantidad de registros.
+Una vez filtrados y comprobados los datos, he buscado las variables para entrenar el modelo, que menos se solaparan entre ellas. Esto se realiza para que pueda ser más exacto en su predicción. He separado los valores de entrenamiento, validación y prueba, y he aplicado el modelo KNeighborsClassifier con una k=5, con el objetivo de buscar la máxima precisión en la clasificación. Al aplicar el modelo y visualizarlo en la matriz de confusión, salta a la vista que ha tenido errores en la clase 1, cosa que he intentado solucionar añadiendo más variables, pero en algunos casos ha sido a peor.
+En un primer momento, los datos de validadación me han dado muy bajos, pero regulando las variables y la k, he conseguido que superara el 90% de fiabilidad.
+En conclusión, se ha quedado un modelo con una fiabilidad global del 90-93%, el cual, siendo un porcentaje bastante fiable, se quedaría un poco corto a la hora de predecir la clase 0 y 1, pues solo sería capaz de identificarla entre un 80-90% de los intentos. A mi parecer, es un buen modelo para aplicar en esta base de datos, pero al disponer de tan pocos datos, es posible que nos esté marcando un índice erroneo de fiabilidad.

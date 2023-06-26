@@ -1,0 +1,7 @@
+Hola, encantado de saludarte!
+
+Aquí tienes un breve resumen de la práctica Modelos de Regresión- TAXI
+
+Para este conjuno de datos he buscado primero la existencia de datos nulos, ceros y negativos. No he encontrado nulos en la tabla, pero si que he encontrado algunos ceros en gran parte de las columnas, los cuales he ido eliminando. Con lo que respecta a los negativos, si que existen en la tabla pero pueden deberse a descuentos que ha hecho el taxista, por lo que no los he eliminado.
+He aplicado el modelo de regresión lineal con las variables 'miscellaneous_fees' y 'tip' pero me ha salido un porcentaje muy bajo, por lo que las he modificado a Fare y Tip, las cuales me han dado un porcentaje de fiabilidad altísimo.
+En segundo lugar, he aplicado el Árbol de Decisión de Regresión con las variables que has comentado en clase, pero por más que lo he intentado no he conseguido que superara el 45%. He eliminado los elementos atípicos, y aun así me sigue saliendo un porcentaje muy bajo.

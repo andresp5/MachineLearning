@@ -1,0 +1,10 @@
+Hola, encantado de saludarte!
+
+Aquí tienes un breve resumen de la práctica Clustering y Classificación
+
+
+Despues de una primera inspección visual, he calculado el porcetaje de zeros existentes en cada columna y he eliminado las columnnas que no son relevantes. Una vez realizado, he desestructurado la columna de la fecha y la dividido en  'estación', 'momento del día' y 'momento de la semana', datos que nos servirán para calcular en que momentos hay mayor afluencia de usuarios.
+Para la limpieza de outliers, he pintado gráficos para que me mostraran la situación de los mismos y luego, despues de identificarlos, los he eliminado para que no alteren a nuestro modelo.
+A continuación, he codificado las columnas no numéricas y despues he aplicado el onehotencoder para que los valores tengan una coherencia dentro de los datos y así interferir lo mínimo posible en el modelo.
+Una vez limpia la tabla, he buscado los clusters a traves del método Kmeans. Sobre el primer gráfico que me ha salido, se puede apreciar el codo a partir del cluster 2 hata el 5, por ello he decidido partir el modelo en 3 grupos. Los cuales se pueden diferenciar perfectamente en el segundo gráfico. Este gráfico nos agrupa las publicaciones que tienen muchos likes, no tienen apenas comentarios y tienen bastantes shares en el grupo 1, los publicaciones que no tienen apenas likes, pero si han sido compartidas y comentadas en el 2, y en el 3 engloba todos los registros que se salen de lo común.
+Despues de la agrupación, he aplicado la validación cruzada y el método de classificación y me ha dado una fiabilidad 97% para enmarcar un dato en el cluster correcto. También he estado realizando pruebas con el el momento del dia, momento de la semana, estación y tipo de publicación, pero los datos no han sido muy positivos, quedandose en un 42,50,37 y 76% respectivamente.

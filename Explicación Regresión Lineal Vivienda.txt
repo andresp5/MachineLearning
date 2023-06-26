@@ -1,0 +1,16 @@
+Hola, encantado de saludarte!
+
+Aquí tienes un breve resumen de la práctica Regresión Lineal Vivienda
+
+Para la limpieza de los datos, se han realizado las acciones siguientes:
+- Se han separado las columnas en numericas y no numericas para poder normalizar los datos.
+- Con el DF de las no numericas, se ha realizado un bucle para detectar el porcentaje de datos repetidos y nulos, y así eliminar esas columnas. Con el resultado de esa eliminación, se ha realizado un One-hot Encoding para numerar todas aquellas variables de texto.
+Para la realización del modelo, se han realizado las acciones siguientes:
+- Se han normalizado los datos.
+- Se han estudiado la correlaciones que tienen las variables entre ellas gracias al mapa de calor.
+- Una vez realizado el estudio, se ha elegido la variable 'TotalBsmtSF' y se ha visualizado.
+- Al visualizarla, la variable contaba con algunos elementos atípicos que se han eliminado.
+- Se han separado las cantidades que perteneceran al entrenamiento, la prueba y el test.
+- Se ha creado el modelo de regresión lineal y se le han dado los datos de entrenamiento. Una vez entrenado el modelo, se han validado los resultados para comprobar el grado de fiablidad del modelo. En la tabla de visualizacíón, los datos no se muestran demasiado agrupados, por lo que no dará un porcentaje de fiabilidad alto.
+- Se ha calculado la formula del modelo, error cuadrático y el coeficiente de determinación, y efectivamente, me han dado unos valores muy bajos. Después se han validado con las datos para el test y se ha comprobado que no era fiable.
+- Se han realizado algunos intentos más hasta que se ha conseguido encontrar dos variables que llegaran al 0.71, porcentaje con el que ya nos aproximariamos a una fiabilidad buena, pero no representativa.

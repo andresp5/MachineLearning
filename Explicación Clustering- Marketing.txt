@@ -1,0 +1,17 @@
+Hola, encantado de saludarte!
+
+Aquí tienes un breve resumen de la práctica Clustering MARKETING
+
+Análisis exploratorio 
+Me he dado cuenta que habían fechas de aniversario que no cuadraban. Para solucionarlo, he extraido el año de la fecha de registro y la he restado al aniversario, para así localizar posibles datos atípicos y eliminarlos. 
+Se han eliminado  algunos datos atípcos del Income, por tratarse de cifras no correspondientes al rango de que sigue la tabla. 
+He detectado que la columna 'Kidhome' y 'Teenhome', se trataban de columnas que solo especifican si es perteneciente o no a ese grupo, y contaba con 3 tipos de datos, en lugar de 2. Por ello, he eliminado los registros con ese 3 grupo atípico.
+Una vez realizado ese primer análisis, he detectado que las columnas Z_CostContact' y 'Z_Revenue' tenian el mismo valor y las he eliminado porque ese tipo de valores no aportan nada a la tabla. Con lo que respecta a los 'Cmp', he sumado todas las columnas, y he calculado la media, porque lo único que nos está diciendo es si ese usuario es propenso a aceptar el envío información comercial o no. Por otro lado, he sumado las columnas de ventas y Mnt, para despues usarlas en el modelo.
+Exploración de Datos
+En la exploración de datos me he dado cuenta que hay una relación muy fuerte entre la edad que tiene el cliente, los ingresos que percibe, y la compra de productos, tanto en tienda como online.
+Creación del Modelo
+Para la selección del número de clusters me he decantado por realizar 3 grupos, ya que en el gráfico de codo he visto que eran los que mayor pendiente tenian.
+Por último, he realizado un gráfico 3d con las variables 'Income', 'TotalPurchases' y 'AgeCustomer'. Este gráfico nos demuestra lo siguiente:
+    - El grupo con unos ingresos inferiores a 40k tienen un volumen de compra máximo de 12-13 artículos independientemente de su rango de edad.
+    - El grupo con unos ingresos entre 40k y 60k tienen un volumen de compra máximo de 20-22 artículos independientemente de su rango de edad.
+    - El grupo con unos ingresos mayores a 60k tienen un volumen de compra como mínimo de 10 unidades y un máximo de 30-32 artículos independientemente de su rango de edad.
