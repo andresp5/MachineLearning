@@ -1,8 +1,0 @@
-Hola, encantado de saludarte!
-
-Aquí tienes un breve resumen de la práctica árboles de decisión FRUITS
-
-Para este modelo de datos he aplicado un arbol de clasificación. En primer lugar he empezado separando los datos en numéricos y no numéricos. He normalizado los registros numéricos y he empezado a aplicar el modelo. Lo más dificil sin duda, ha sido la selección de variables que me dieran una fiabilidad del modelo aceptable. He probado con todo tipo de combinaciones alternando niveles y variables(ya que muchas veces a mayor nivel mejor fiabilidad) y al final he conseguido una fiabilidad del 73%.
-En segundo lugar, estuve probando a realizar un árbol de regresión, pero no conseguí los resultados que buscaba, pues no conseguí que el modelo identifiacara las columnas del one-hot-encoding.
-En tercer lugar, he comprobado si las mismas variables funcionaban con el KNN y el resultado ha sido parecido al arbol de clasificación.
-Al principio realizé un filtrado/igualado del número de registros de cada clase, pero el resultado fué muy negativo, la clase minoritaria tenia unos 60 registros y esa cantidad de muestra no era sufiente para sacar un modelo fiable. Después, regresé al principio y apliqué la tabla original y si he podido alcanzar un porcentaje parecido con las mismas variables.
